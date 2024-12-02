@@ -1,0 +1,28 @@
+# Conversion to YAML from Properties formar report
+# Warnings:
+# - The yaml file had comments which are lost in the refactoring!
+spring:
+  application:
+    name: MiniProj01-CURDOperations
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: system
+    password: system
+  jpa:
+    show-sql: true
+server:
+  port: 4041
+plan:
+  module:
+     messages:
+         status-change-success: Travel plan status is changed
+         status-change-failure: Travel plan is not found for status change
+         save-success: travel plan is saved with id value
+         find-by-id-failure: Travel plan is not found
+         update-failure: Travel plan is not found for updation
+         delete-success: Travel plan is deleted
+         save-failure: Travel plan is not saved with value
+         delete-failure: travel plan is not found for deletion
+         update-success: Travel Plan is updated
+
